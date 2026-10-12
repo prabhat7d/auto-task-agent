@@ -1,0 +1,43 @@
+{
+  "name": "auto-task-agent",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "typecheck": "tsc --noEmit",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "format:check": "prettier --check \"src/**/*.ts\"",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@langchain/core": "^1.2.17",
+    "@langchain/langgraph": "^1.4.21",
+    "@langchain/openai": "^1.6.2",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.6",
+    "express": "^5.2.1",
+    "multer": "^2.4.0",
+    "pdfjs-dist": "^6.4.299",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/multer": "^2.3.0",
+    "@types/node": "^26.6.4",
+    "@types/supertest": "^7.2.1",
+    "prettier": "^3.9.9",
+    "supertest": "^7.3.1",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.3"
+  }
+}
